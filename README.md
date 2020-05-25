@@ -1,6 +1,6 @@
 # Backdoor
 
-A backdoor refers to any method by which authorized and unauthorized users are able to get around normal security measures and gain high level user access on a computer system, network, or software application. With this malware we're going to gain access to download files, upload files, and access any repository ta we want.</br>
+A backdoor refers to any method by which authorized and unauthorized users are able to get around normal security measures and gain high level user access on a computer system, network, or software application. With this malware we're going to gain access to download files, upload files, and access any repository that we want.</br>
 ## HOW?</br>
 This malware have to be executed on the target machine, this repository don't cover the part of this malware being executed on the target machine because this is done with social engineering converting the progam .py in one file .exe, anyway i won't cover this here, i'm gonna show how to create the malware.
 
