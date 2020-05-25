@@ -1,10 +1,10 @@
-# Backdoor
+# Backdoor.
 
 A backdoor refers to any method by which authorized and unauthorized users are able to get around normal security measures and gain high level user access on a computer system, network, or software application. With this malware we're going to gain access to download files, upload files, and access any repository that we want.</br>
 ## HOW?</br>
 This malware have to be executed on the target machine, this repository don't cover the part of this malware being executed on the target machine because this is done with social engineering, converting the progam .py in one file .exe, anyway i won't cover this here, i'm gonna show how to create the malware.
 
-## Behavior of a Backdoor
+## Behavior of a Backdoor.
 The idea is connect the both computers(mine and the target machine) using sockets, but trying to connect my computer with the target directly doesn't work, the system denies the connection with some random port obviously, is like someone random trying to connect with my computer i wouldn't allow. So instead of me try to connect with some random port of the target machine i'm gonna make the target machine connect with me, when the target downloads the .exe it's gonna run the progam and this way connecting with some port that i opened in my computer.</br>
 
 Once i already have the connection how i'm gonna execute commands on the target machine and download files e upload files? With the socket connection i can send and receive strings between the computers, so i'm gonna send the command that i want to execute on the target machine and he will receive, and my progam(the program that the target downloaded) will treat the string and execute on the target machine, sending back to my computer the command result. EX: if the target use Windows and i send the command "cd" as a string he will receive and my progam(on the target machine) it's gonna execute and send back the command result, in this case the directory that i'm.</br>
@@ -101,7 +101,7 @@ def run(self):
 
                print(result)
 ```
-##The Backdoor in action...
+## The Backdoor in action...
 
 First of all i have to execute the listener.py in my machine and wait the target download the .exe, with my testing machine
 i downloaded the .exe(the file reverse_backdoor.py) then the connection is made automatically from the target machine. How you can see i got a connection from my target and if write the command ipconfig i already can see the result on my machine about the target machine. 
