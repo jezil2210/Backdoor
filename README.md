@@ -9,7 +9,7 @@ The idea is to connect both computers(mine and the target machine) using sockets
 
 Once I already have the connection how I'm gonna execute commands on the target machine and download files and upload files? With the socket connection, I can send and receive strings between the computers, so I'm gonna send the command that I want to execute on the target machine and he will receive, and my program(the program that the target downloaded) will treat the string and execute on the target machine, sending back to my computer the command result. EX: if the target uses Windows and I send the command "cd" as a string he will receive and my program(on the target machine) it's gonna execute and send back the command result, in this case the directory that I'm.</br>
 
-The first thing that my .exe it's gonna do when the target executes, it's connecting with my machine using the module "socket" of python, in this case, the connection is made by the constructor when I create an object of the class backdoor.
+The first thing that my .exe it's gonna do when the target executes, it's connecting with my machine(reverse shell) using the module "socket" of python, in this case, the connection is made by the constructor when I create an object of the class backdoor.
 ```python
 def __init__(self, ip, port):
     self.connection = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
